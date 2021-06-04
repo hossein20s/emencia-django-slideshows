@@ -50,7 +50,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='slide',
             name='slideshow',
-            field=models.ForeignKey(verbose_name='slideshow', to='slideshows.Slideshow, on_delete=models.CASCADE'),
+            field=models.ForeignKey(verbose_name='slideshow', to='slideshows.Slideshow', on_delete=models.CASCADE),
             preserve_default=True,
         ),
     ]
