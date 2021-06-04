@@ -52,5 +52,6 @@ class Migration(migrations.Migration):
             name='slideshow',
             field=models.ForeignKey(verbose_name='slideshow', to='slideshows.Slideshow'),
             preserve_default=True,
+            on_delete=models.CASCADE,
         ),
     ]
