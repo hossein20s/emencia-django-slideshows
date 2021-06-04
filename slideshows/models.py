@@ -88,6 +88,7 @@ class Slide(models.Model):
         Slideshow,
         verbose_name=_('slideshow'),
         blank=False,
+        on_delete=models.CASCADE,
     )
     created = models.DateTimeField(
         _('created'),
