@@ -76,7 +76,8 @@ class SlideshowFragment(template.Node):
             'slideshow_instance': instance,
             'slideshow_slides': instance.get_published_slides(),
         })
-        content = t.render(template.Context(context))
+        # content = t.render(template.Context(context))
+        content = t.render(context)
 
         return content
 
@@ -103,7 +104,8 @@ class SlideshowFragment(template.Node):
             'slideshow_instance': instance,
             'slideshow_slides': instance.get_published_slides(),
         })
-        content = t.render(template.Context(context))
+        # content = t.render(template.Context(context))
+        content = t.render(context)
 
         return content
 
